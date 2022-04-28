@@ -8,5 +8,6 @@ class Club {
     constructor(name: String?, points: Int) {
         this.name = name
         this.points = points
+
     }
 }
