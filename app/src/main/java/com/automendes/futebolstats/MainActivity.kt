@@ -64,14 +64,14 @@ class MainActivity : AppCompatActivity() {
             textViewClubName.text = clubs[position].name
             textViewClubPoints.text = clubs[position].points.toString()
 
-            /*
+
             rootView.setOnClickListener {
-                val intent = Intent(this@MainActivity, ContactDetailActivity:: class.java)
-                intent.putExtra(ContactDetailActivity.CONTACT_NAME, contacts[position].name)
-                intent.putExtra(ContactDetailActivity.CONTACT_PHONE, contacts[position].phone)
+                val intent = Intent(this@MainActivity, ClubDetailActivity:: class.java)
+                intent.putExtra(ClubDetailActivity.CLUB_NAME, clubs[position].name)
+                intent.putExtra(ClubDetailActivity.CLUB_POINTS, clubs[position].points.toString())
                 startActivity(intent)
             }
-            */
+
 
             return rootView
         }
